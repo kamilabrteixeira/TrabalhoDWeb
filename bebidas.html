@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Receitas e Drinks</title>
+</head>
+<body>
+    <nav class="menu">
+        <a href="inicio.html">Início</a>
+        <a href="salgados.html">Receitas Salgadas</a>
+        <a href="doces.html">Receitas de doces</a>
+        <a href="bebidas.html">Receitas de Drinks</a>
+    </nav>
+   
+    <h1>Receitas e Drinks</h1>
+
+    <h2>Drinks</h2>
+
+    <h3>Caipirinha</h3>
+    <img src="ImagensTrabalho/caipirinha.jpeg" alt="Caipirinha"><br>
+    <ul>
+        <li>1 limão (corte em rodelas e macere com açúcar)</li>
+        <li>2 colheres de açúcar</li>
+        <li>50ml de cachaça (adicione e misture)</li>
+        <li>Gelo a gosto (complete o copo)</li>
+    </ul>
+
+    <h3>Caipirinha com Leite Condensado</h3>
+    <img src="ImagensTrabalho/caipirinha2.jpeg" alt="Caipirinha com Leite Condensado"><br>
+    <ul>
+        <li>1 limão (espremido e misture com leite condensado)</li>
+        <li>2 colheres de leite condensado</li>
+        <li>50ml de cachaça</li>
+        <li>Gelo a gosto</li>
+    </ul>
+
+    <h3>Caipifruta de Morango</h3>
+    <img src="ImagensTrabalho/caipmorango.jpeg" alt="Caipifruta de Morango"><br>
+    <ul>
+        <li>5 morangos (amasse com açúcar até formar uma polpa)</li>
+        <li>2 colheres de açúcar</li>
+        <li>50ml de cachaça (adicione e misture)</li>
+        <li>Gelo a gosto</li>
+    </ul>
+
+    <h3>Drink Azul (Blue Lagoon)</h3>
+    <img src="ImagensTrabalho/blue.jpeg" alt="Blue Lagoon"><br>
+    <ul>
+        <li>50ml de vodka (misture com curaçau blue)</li>
+        <li>20ml de curaçau blue</li>
+        <li>Complete com refrigerante de limão</li>
+        <li>Gelo a gosto</li>
+    </ul>
+
+    <h3>Drink com Catuaba</h3>
+    <img src="ImagensTrabalho/catuaba.jpeg" alt="Drink com Catuaba"><br>
+    <ul>
+        <li>100ml de catuaba (coloque em um copo com gelo)</li>
+        <li>Complete com refrigerante de guaraná</li>
+        <li>Mexa suavemente para misturar</li>
+    </ul>
+    <h3>Batida de Coco</h3>
+    <img src="ImagensTrabalho/coco.jpeg" alt="Batida de Coco"><br>
+    <ul>
+        <li>100 ml de leite de coco</li>
+        <li>50 ml de cachaça</li>
+        <li>50 ml de leite condensado</li>
+        <li>Gelo</li>
+    </ul>
+    <h3>Batida de Vinho</h3>
+        <img src="ImagensTrabalho/vinho.jpeg" alt="Batida de Vinho"><br>
+        <ul>
+            <li>200 ml de vinho tinto</li>
+            <li>100 ml de leite condensado</li>
+            <li>Gelo</li>
+        </ul>
+        <h3>Cuba Libre</h3>
+        <img src="ImagensTrabalho/cubalibre.jpeg" alt="Cuba Libre"><br>
+        <ul>
+            <li>50 ml de rum</li>
+            <li>150 ml de refrigerante de cola</li>
+            <li>1 limão</li>
+            <li>Gelo</li>
+        </ul>
+        <h3>Mojito</h3>
+        <img src="ImagensTrabalho/mojito.jpeg" alt="Mojito"><br>
+        <ul>
+            <li>6 folhas de hortelã</li>
+            <li>2 colheres de açúcar</li>
+            <li>50 ml de rum</li>
+            <li>1 limão</li>
+            <li>Água com gás</li>
+            <li>Gelo</li>
+        </ul>
+        <h3>Drink Rosa</h3>
+        <img src="ImagensTrabalho/pink.jpeg" alt="Drink Rosa"><br>
+        <ul>
+            <li>50 ml de gin</li>
+            <li>50 ml de licor de framboesa</li>
+            <li>1 limão</li>
+            <li>Gelo</li>
+        </ul>
+        
+        <button id="scrollToTopBtn">Voltar ao Topo</button>
+    <script>
+        window.onscroll = function() {
+            let button = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block"; 
+            } else {
+                button.style.display = "none"; 
+            }
+        };
+    
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    
+        document.getElementById("scrollToTopBtn").onclick = scrollToTop;
+    </script>
+    
+</body>
+</html>
