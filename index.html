@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pequeno Guia de Receitas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="titulo">
+        <h1>Bem-vindo ao pequeno livro de receitas!</h1>
+        <p>Descubra deliciosas receitas de drinks, sobremesas e pratos salgados para encantar seu paladar.</p>
+    </header>
+
+    <nav class="menu">
+   
+                <a href="inicio.html" >INICIO</a>
+                <a href="salgados.html">Receitas Salgadas</a>
+                <a href="doces.html">Receitas de Doces</a>
+                <a href="bebidas.html">Receitas de Drinks</a>
+        
+
+    </nav>
+
+
+    <section class="informacoes">
+        <h2>Sobre o Nosso Mini-Guia</h2>
+        <p>Este site é um verdadeiro livrinho virtual, criado com carinho para quem deseja explorar receitas práticas e
+            deliciosas. Aqui, você encontrará receitas simples e de dificuldade média, sempre acompanhadas de belas
+            imagens ilustrativas para inspirar seu preparo.</p>
+        <p>Com uma abordagem objetiva, nosso guia é ideal para todos que preferem receitas diretas, sem distrações,
+            especialmente para o público da terceira idade, que busca praticidade e clareza na cozinha.</p>
+    </section>
+
+    <section class="informacoes">
+        <h2>Por que Escolher Este Mini-Guia?</h2>
+        <p>✔️ Receitas testadas e explicadas com simplicidade para que você cozinhe com segurança.
+        <p>✔️ Ilustrações que ajudam você a visualizar o resultado final.
+        <p>✔️ Navegação fácil e prática, como folhear um livro de receitas digital.</p>
+        <p>Se você deseja preparar pratos deliciosos sem complicação, está no lugar certo. Explore nossas receitas e
+            divirta-se na cozinha!</p>
+    </section>
+
+    <button id="zoomInBtn">Zoom</button>
+    <button id="zoomOutBtn">MenosZoom</button>
+
+    <footer ><p id="footer"> </p> </footer>
+
+    <!--STYLE  DO ZOOM -->
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #zoomInBtn {
+            background-color: #b4085e;
+            color: white;
+        }
+
+        #zoomOutBtn {
+            background-color: #b4085e;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+
+    <script>
+        let zoomLevel = 1;
+
+        document.getElementById("zoomInBtn").onclick = function () {
+            if (zoomLevel < 2) {
+                zoomLevel += 0.1;
+                document.body.style.transform = "scale(" + zoomLevel + ")";
+            }
+        };
+
+        document.getElementById("zoomOutBtn").onclick = function () {
+            if (zoomLevel > 0.5) {
+                zoomLevel -= 0.1;
+                document.body.style.transform = "scale(" + zoomLevel + ")";
+            }
+        };
+        
+        //ANO
+        document.getElementById("footer").textContent= new Date().getFullYear();
+        </script>
+
+
+
+</body>
+
+</html>
